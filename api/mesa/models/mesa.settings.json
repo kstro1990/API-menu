@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mesas",
+  "info": {
+    "name": "mesa"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "numero": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string"
+    },
+    "tokenQR": {
+      "type": "text"
+    },
+    "QR_imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

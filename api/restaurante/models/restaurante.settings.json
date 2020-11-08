@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurantes",
+  "info": {
+    "name": "restaurante",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Telefono": {
+      "type": "integer",
+      "unique": true,
+      "min": 10,
+      "max": 14,
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    }
+  }
+}

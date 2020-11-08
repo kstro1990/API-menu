@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedidos",
+  "info": {
+    "name": "pedido"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "mesa": {
+      "type": "string"
+    },
+    "platos": {
+      "type": "json"
+    }
+  }
+}
