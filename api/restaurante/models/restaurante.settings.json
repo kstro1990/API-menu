@@ -14,7 +14,7 @@
     "Telefono": {
       "type": "integer",
       "unique": true,
-      "min": 10,
+      "min": 8,
       "max": 14,
       "required": true
     },
